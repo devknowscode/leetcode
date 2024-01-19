@@ -1,0 +1,14 @@
+{
+    "name": "C++",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+	"service": "cpp-container",
+	"shutdownAction": "none",
+	"workspaceFolder": "/workspace/cpp",
+    "features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "lts",
+			"nvmVersion": "latest"
+		}
+	}
+}

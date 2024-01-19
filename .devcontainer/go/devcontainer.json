@@ -1,0 +1,10 @@
+{
+    "name": "Go",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "go-container",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/go",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Javascript",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "javascript-container",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/javascript"
+}

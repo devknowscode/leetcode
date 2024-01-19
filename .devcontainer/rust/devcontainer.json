@@ -1,0 +1,10 @@
+{
+    "name": "Rust",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "rust-container",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/rust",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    }
+}

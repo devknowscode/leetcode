@@ -1,0 +1,39 @@
+version: '1.0.0'
+
+services:
+  cpp-container:
+    image: mcr.microsoft.com/devcontainers/cpp:1-debian-11
+    volumes:
+      - .:/workspace
+      - ./.devcontainer/cpp/reinstall-cmake.sh:/tmp/reinstall-cmake.sh
+    command: sleep infinity
+
+  javascript-container:
+    image: mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye
+    volumes:
+      - .:/workspace
+    command: sleep infinity
+
+  java-container:
+    image: mcr.microsoft.com/devcontainers/java:1-21-bullseye
+    volumes:
+      - .:/workspace
+    command: sleep infinity
+
+  csharp-container:
+    image: mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm
+    volumes:
+      - .:/workspace
+    command: sleep infinity
+
+  go-container:
+    image: mcr.microsoft.com/devcontainers/go:1-1.21-bullseye
+    volumes:
+      - .:/workspace
+    command: sleep infinity
+
+  rust-container:
+    image: mcr.microsoft.com/devcontainers/rust:1-1-bullseye
+    volumes:
+      - .:/workspace
+    command: sleep infinity
